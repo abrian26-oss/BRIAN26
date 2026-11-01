@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+ <html lang="en">
+     <head> <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>
+            Products - Kigezi Tea Factory, Kabale
+        </title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #3edb0a;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        padding: 10px 30px;
+        background-color: rgb(224, 240, 245);
+    }
+    .logo {
+        width: 150px;
+        margin-right: 50px;
+    }
+    .logo img {
+        width: 180px;
+        height: 100px;
+        object-fit: contain;
+    }
+    .header-content h1 {
+        color: #176b2c;
+        font-size: 40px;
+        margin: 0;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+        font-size: larger;
+        font-weight: bold;
+        font-family: 'Lucida Sans', sans-serif;
+        margin: 0;
+        padding: 25px;
+        background-color: rgb(15, 241, 155);
+    }
+    nav a {
+        text-decoration: none;
+        color: #176b2c;
+    }
+    nav a:hover {
+        color: #d89b22;
+    }
+    .page-title {
+        text-align: center;
+        background-color: #176b2c;
+        color: white;
+        padding: 45px 20px;
+    }
+    .page-title h2 {
+        font-size: 36px;
+        margin: 0 0 10px;
+    }
+    .page-title p {
+        font-size: 18px;
+        margin: 0;
+    }
+    .intro {
+        width: 90%;
+        max-width: 1100px;
+        margin: 40px auto;
+        background-color: white;
+        padding: 35px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        text-align: center;
+    }
+    .intro h2 {
+        color: #176b2c;
+    }
+    .products {
+        width: 90%;
+        max-width: 1100px;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+    .product-card {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        border-top: 6px solid #176b2c;
+    }
+    .product-card:nth-child(2) {
+        border-top-color: #d89b22;
+    }
+    .product-card:nth-child(3) {
+        border-top-color: #176b2c;
+    }
+    .product-card h3 {
+        color: #176b2c;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .product-card p {
+        margin-bottom: 15px;
+    }
+    .product-card ul {
+        text-align: left;
+        margin-top: 15px;
+    }
+    .product-card li {
+        margin-bottom: 8px;
+    }
+    .main-product {
+        width: 90%;
+        max-width: 1100px;
+        margin: 40px auto;
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        border-left: 7px solid #176b2c;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+    .main-product h2 {
+        color: #176b2c;
+        text-align: center;
+    }
+    .main-product h3 {
+        color: #176b2c;
+    }
+    .quality {
+        width: 90%;
+        max-width: 1100px;
+        margin: 40px auto;
+        background-color: white;
+        padding: 35px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+    .quality h2 {
+        color: #176b2c;
+        text-align: center;
+    }
+    .quality ul {
+        max-width: 800px;
+        margin: auto;
+    }
+    .quality li {
+        margin-bottom: 12px;
+    }
+   .contact {
+        text-align: center;
+        background-color: #176b2c;
+        color: white;
+        padding: 40px;
+        margin-top: 50px;
+    }
+    .contact h2 {
+        color: white;
+    }
+    .footer {
+        text-align: center;
+        background-color: #0d3d19;
+        color: white;
+        padding: 20px;
+    }
+    .footer p {
+        margin: 0;
+    }
+        @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            text-align: center;
+            padding: 15px;
+        }
+        .logo {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        .header-content h1 {
+            font-size: 25px;
+        }
+        nav {
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+        }
+        .products {
+            grid-template-columns: 1fr;
+        }
+        .page-title h2 {
+            font-size: 28px;
+        }
+        .main-product,
+        .quality,
+        .intro {
+            padding: 25px;
+        }
+    }
+</style>
+</head> 
+<body>
+<header>
+    <div class="logo">
+        <img src="C:\Users\DELL\Downloads\a_clean_vector_style_high_resolution_circular_lo.png"
+             alt="Kigezi Tea Factory Logo">
+    </div>
+    <div class="header-content">
+        <h1>PRODUCTS AT KIGEZI TEA FACTORY, KABALE</h1>
+    </div>
+</header>
+ <nav class="menu bar">
+            <a href="index.html">HOME</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="products.html">PRODUCTS</a>
+            <a href="services.html">SERVICES</a>
+            <a href="contactus.html">CONTACT US</a>
+        </nav>
+
+<section class="page-title">
+    <h2>OUR PRODUCTS</h2>
+    <p>
+        Quality tea products from the Kigezi region of Uganda
+    </p>
+</section>
+<section class="intro">
+    <h2>Products Offered by Kigezi Tea Factory</h2>
+    <p>
+        Kigezi Tea Factory processes fresh green tea leaves
+        supplied by tea farmers in Kabale and surrounding areas.
+        The factory produces quality tea products for local
+        and international markets.
+    </p>
+    <p>
+        Our main product is processed black tea, produced through
+        careful processing and quality control.
+    </p>
+</section>
+<section class="products-images">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.4rcT7gBGW6fShGyyguepAAHaDF?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" height="300" width="300"><img src="data:image/webp;base64,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" height="300" width="300"><img src="https://tse4.mm.bing.net/th/id/OIP.Rt-ns2c3IRkO2p810IHaRQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=https://tse4.mm.bing.net/th/id/OIP.Rt-ns2c3IRkO2p810IHaRQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=" height="300" width="300"><img src="https://th.bing.com/th/id/OIP.7jjQOYTUhOadE1T1-Ti46AHaHa?w=175&h=180&c=7&r=0&o=7&pid=1.7&rm=3" height="300" width="300">
+</section>
+<section class="products">
+    <div class="product-card">
+        <h3>Processed Black Tea</h3>
+        <p>
+            Our main finished product is high-quality processed
+            black tea produced from freshly harvested green tea leaves.
+        </p>
+        <ul>
+            <li>Quality black tea</li>
+            <li>Processed locally in Kabale</li>
+            <li>Suitable for tea markets</li>
+            <li>Prepared for local and export markets</li>
+        </ul>
+    </div>
+    <div class="product-card">
+        <h3>Tea for Export</h3>
+        <p>
+            Processed tea is prepared for wider markets, including
+            international tea markets where Ugandan tea is sold.
+        </p>
+        <ul>
+            <li>Processed black tea</li>
+            <li>Market-ready tea</li>
+            <li>Suitable for export markets</li>
+            <li>Supports Uganda's tea export industry</li>
+        </ul>
+    </div>
+    <div class="product-card">
+        <h3>Fresh Green Tea Leaves</h3>
+        <p>
+            Fresh green tea leaves are the primary raw material
+            supplied by tea farmers for processing at the factory.
+        </p>
+        <ul>
+            <li>Freshly harvested tea leaves</li>
+            <li>Collected from local farmers</li>
+            <li>Used in black tea production</li>
+            <li>Supports the local tea value chain</li>
+        </ul>
+    </div>
+</section>
+<section class="main-product">
+    <h2>Our Main Product: Black Tea</h2>
+    <p>
+        Kigezi Tea Factory specializes in processing green tea
+        leaves into black tea. The processing operation adds
+        value to tea grown by farmers in the Kigezi region.
+    </p>
+    <h3>Tea Processing</h3>
+    <p>
+        Fresh green tea leaves are received from farmers and
+        processed using tea-processing equipment. The processed
+        tea is then prepared for marketing and sale.
+    </p>
+    <h3>Market</h3>
+    <p>
+        Processed tea can be marketed through established tea
+        markets, including the Mombasa Tea Auction, where tea
+        from East Africa is traded.
+    </p>
+</section>
+<section class="quality">
+    <h2>Product Quality</h2>
+    <p>
+        Kigezi Tea Factory aims to maintain high standards in
+        tea processing and handling. Quality is important at
+        every stage of the tea value chain.
+    </p>
+    <ul>
+        <li>
+            Fresh green tea leaves are collected from tea farmers.
+        </li>
+        <li>
+            Tea leaves are processed using appropriate processing
+            methods and equipment.
+        </li>
+        <li>
+            Processed tea is handled carefully before marketing.
+        </li>
+        <li>
+            The factory focuses on producing tea suitable for
+            established tea markets.
+        </li>
+        <li>
+            Value addition helps increase the economic benefits
+            of tea production in the Kigezi region.
+        </li>
+    </ul>
+</section>
+<section class="intro">
+    <h2>Supporting the Tea Value Chain</h2>
+    <p>
+        Our products represent an important part of the tea
+        value chain in Southwestern Uganda. By purchasing green
+        tea leaves from farmers and processing them into
+        finished tea, the factory contributes to value addition,
+        employment and household incomes.
+    </p>
+</section>
+<section class="contact">
+    <p>Quality products,Quality market </p>
+</section>
+<footer class="footer">
+    <p>
+        © 2026 Kigezi Tea Factory, Kabale. All rights reserved.
+    </p>
+</footer>
+</body> 
+</html>
